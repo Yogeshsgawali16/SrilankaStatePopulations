@@ -15,7 +15,7 @@ import com.example.service.StateService;
 public class StateController {
 
 	@Autowired
-	private StateService service;
+	 StateService service;
 
 	@GetMapping("/allstatepopulations")
 	public List<State> all() {
@@ -24,14 +24,14 @@ public class StateController {
 
 	}
 
-	@GetMapping("/highestpopulations")
+	@GetMapping("/highestpopulationssrilanka")//highestpopulations
 	public State highestpopulations() {
 
 		return service.highestpopulations();
 
 	}
 
-	@RequestMapping("/topfive")
+	@RequestMapping("/topfivess")
 	public List<State> topfive() {
 
 		return service.topfivePopulations();

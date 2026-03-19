@@ -15,7 +15,7 @@ import com.example.service.StateService;
 public class StateController {
 
 	@Autowired
-	private StateService service;
+	StateService service;
 
 	@GetMapping("/allstatepopulations")
 	public List<State> all() {

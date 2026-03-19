@@ -15,11 +15,8 @@ import com.example.service.StateService;
 public class StateController {
 
 	@Autowired
-<<<<<<< HEAD
-	 StateService service;
-=======
+
 	StateService service;
->>>>>>> 08d88ffa09ff5148a6a99de2e3335924541a5b07
 
 	@GetMapping("/allstatepopulations")
 	public List<State> all() {
@@ -28,7 +25,7 @@ public class StateController {
 
 	}
 
-	@GetMapping("/highestpopulationssrilanka")//highestpopulations
+	@GetMapping("/highestpopulationssrilanka") // highestpopulations
 	public State highestpopulations() {
 
 		return service.highestpopulations();
